@@ -107,6 +107,7 @@ ul li h2{
     width: 90%;
     border-bottom: 2px solid #188656;
     padding-top: 3px;
+    cursor: pointer;
 }
 
 
@@ -114,4 +115,5 @@ ul li h2{
 #lista{
     margin-top: 25px;
     display: none;
+
 }

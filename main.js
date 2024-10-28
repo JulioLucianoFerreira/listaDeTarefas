@@ -6,8 +6,8 @@ $(document).ready(function(){
 
     $('#botaoCancelar').click(function() {
         $('form').slideUp();
-    })
 
+    });
 
     $('form').on('submit', function(e) {
         e.preventDefault();
@@ -15,13 +15,14 @@ $(document).ready(function(){
         const novoItem = $('<li></li>');
         $(`<h2 id="novo">${novaTarefa} </h2>`).appendTo(novoItem);
         $(novoItem).appendTo('ul');
-        $('#NovaTarefa').val('')
+        $('#NovaTarefa').val('');
+
+        $(novoItem).click(function(){
+            $(novoItem).css({
+                "text-decoration":"line-through"
+            })
+        })
+})
 })
 
-    
 
-
-
-
-
-})
